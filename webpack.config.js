@@ -10,7 +10,7 @@ module.exports = {
         hot: 'webpack/hot/dev-server.js',
         client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true'
     },
-    devtool: 'inline-source-map',
+    devtool: 'eval-cheap-source-map',
     devServer: {
         static: "./dist",
         hot: true,
