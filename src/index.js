@@ -5,7 +5,7 @@ import {
     menuComp
 } from './components';
 
-
+/* BASIC!! */
 (() => {
     console.log("index.js console!");
     const navBarDiv = document.createElement('div');
