@@ -1,28 +1,34 @@
 const homeComp = () => {
     console.log("Home here")
-    const homeDiv = document.createElement('div');
-    const homeH1 = document.createElement('h1');
+    document.getElementById("title").innerText = "Restaurant";
 
-    homeH1.innerText = "Restaurant";
-    homeDiv.appendChild(homeH1)
+    const homeDiv = document.createElement('div');
+    const homeP = document.createElement('p');
+    homeP.innerText = "We have all the food come eat here!"
+    homeDiv.appendChild(homeP)
+
     return homeDiv;
 }
 
 const contactComp = () => {
-    const contactDiv = document.createElement('div');
-    const contactH1 = document.createElement('h1');
+    document.getElementById("title").innerText = "Contact";
 
-    contactH1.innerText = "Contact";
-    contactDiv.appendChild(contactH1)
+    const contactDiv = document.createElement('div');
+    const contactP = document.createElement('p');
+    contactP.innerText = "Contact me please!"
+    
+    contactDiv.appendChild(contactP)
     return contactDiv;
 }
 
 const menuComp = () => {
-    const menuDiv = document.createElement('div');
-    const menuH1 = document.createElement('h1');
+    document.getElementById("title").innerText = "Menu";
 
-    menuH1.innerText = "Menu";
-    menuDiv.appendChild(menuH1)
+    const menuDiv = document.createElement('div');
+    const menuP = document.createElement('p');
+    menuP.innerText = "Breakfast, Lunch and Dinner we have it all"
+    
+    menuDiv.appendChild(menuP)
     return menuDiv;
 }
 

@@ -6,6 +6,7 @@ import {
 } from './components';
 
 
+
 (() => {
     console.log("index.js console!");
     const navBarDiv = document.createElement('div');
@@ -42,12 +43,12 @@ import {
     console.log("navbar added");
     console.log(document.getElementsByName('header'))
     document.getElementById('header').appendChild(navBarDiv);
-    document.getElementById('content').appendChild(homeComp())
+    document.getElementById('page-content').appendChild(homeComp())
 
 })();
 
 function tabClickListener(comp) {
-    document.getElementById("content").innerHTML = "";
-    document.getElementById('content').appendChild(comp())
+    document.getElementById("page-content").innerHTML = "";
+    document.getElementById('page-content').appendChild(comp())
 
 }
